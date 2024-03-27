@@ -23,6 +23,17 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       keyframes: {
+        'productAppear': {
+          from: {
+            opacity: '0',
+            transform: 'translateY(3rem)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+    
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
