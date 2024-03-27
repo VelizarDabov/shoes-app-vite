@@ -3,8 +3,8 @@ import ProductCard from "./ProductCard"
 
 const Products = () => {
   return (
-    <section className="max-w-[60rem] mx-auto my-8 animate-product-appear">
-        <ul className="">
+    <section className="max-w-[60rem] mx-auto my-8">
+        <ul className="p-4 m-2 md:m-0 shadow-xl rounded-lg border-2 border-gray-400/60 ">
             {products.map((product)=> (
                  <ProductCard
                  key={product.id}

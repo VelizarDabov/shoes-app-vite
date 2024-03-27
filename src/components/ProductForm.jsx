@@ -7,9 +7,9 @@ const ProductForm = () => {
   };
   const [isVisible, setIsVisible] = useState(true);
   return (
-    <form onSubmit={submitHandler} className="text-right">
+    <form onSubmit={submitHandler} className="">
       {isVisible && (
-        <Button className=" block bg-inherit bg-[#3486b6]  text-white font-bold hover:bg-[#71a8ca] hover:scale-105">
+        <Button className="  bg-inherit bg-[#3486b6]  text-white font-bold hover:bg-[#71a8ca] hover:scale-105">
           BUY NOW
         </Button>
       )}

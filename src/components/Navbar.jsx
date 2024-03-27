@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 
-const Navbar = ({showCartHandler}) => {
+const Navbar = (props) => {
   return (
     <nav className="bg-[#128dbd]">
       <div className="flex justify-between items-center p-4">
@@ -9,7 +9,7 @@ const Navbar = ({showCartHandler}) => {
           Rare Air Kicks
         </h1>
         <Button
-          onClick={showCartHandler}
+          onClick={props.onClick}
           variant="outline"
           className="text-white hover:scale-105 bg-blue-900/50 rounded-3xl px-6"
         >
